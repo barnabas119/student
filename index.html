@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Receipt Generator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>School Receipt Generator</h1>
+    <form id="receiptForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required>
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" required>
+        <label for="schoolFees">School Fees ($):</label>
+        <input type="number" id="schoolFees" step="0.01" required>
+        <label for="extracurricularFees">Extracurricular Fees ($):</label>
+        <input type="number" id="extracurricularFees" step="0.01" required>
+        <label for="reportCardFees">Report Card Fees ($):</label>
+        <input type="number" id="reportCardFees" step="0.01" required>
+        <label for="uniformFees">Uniform Fees ($):</label>
+        <input type="number" id="uniformFees" step="0.01" required>
+        <label for="feedingFees">Feeding Fees ($):</label>
+        <input type="number" id="feedingFees" step="0.01" required>
+        <button type="submit">Generate Receipt</button>
+    </form>
+    <div id="receiptOutput" class="receipt"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
